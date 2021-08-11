@@ -1,0 +1,493 @@
+@import reset
+@import '../owl/owl.carousel.min.css'
+@import '../owl/owl.theme.default.min.css'
+
+body
+	line-height: 1.4
+	color: #fff
+	height: 100vh
+	perspective: 1000px
+	cursor: none
+	overflow: hidden
+
+
+	@media screen and (max-width: 600px)
+		perspective: none
+		height: initial
+		//width: 100vw
+		//height: 100%
+		//width: 100%
+
+.about
+	transform-style: preserve-3d
+	padding: 160px 0
+	cursor: none
+
+.header
+	position: fixed
+	left: 0
+	top: 0
+	right: 0
+	padding: 20px
+
+.toggle-btn
+	position: fixed
+	margin: 2.4em
+	padding: 1em
+	width: 40px
+	height: 12px
+	right: 0
+	z-index: 10000
+	&:hover > span
+		background: cadetblue
+
+span.one
+	position: absolute
+	width: 40px
+	height: 2px
+	background: white
+
+span.two
+	position: absolute
+	width: 40px
+	height: 2px
+	background: white
+	margin-top: 12px
+
+.menue
+	z-index: 1500
+	position: absolute
+	background: #101010
+	height: 100vh
+	width: 100%
+	top: -100%
+
+.menuw
+	z-index: 1500
+	background: #123
+	height: 0
+	padding-top: 20%
+	span
+		font-size: 24px
+		font-weight: bold
+		text-transform: uppercase
+		cursor: pointer
+
+.pagination
+	position: fixed
+	top: 30%
+	right: 5%
+	z-index: 1500
+
+	@media screen and (max-width: 500px)
+		top: 92%
+		left: 20%
+
+		ul
+			display: flex
+
+		a
+			display: none
+
+	li
+		margin-bottom: 10px
+		padding: 10px
+		width: 100%
+		//border: 1px solid
+
+		&:hover > a
+			transform: translateX(3vw)
+			opacity: 1
+
+		&:after
+			content: ''
+			opacity: 1
+			background: #9effff
+			width: 15px
+			height: 15px
+			padding: 3px
+			border-radius: 8px
+
+		&:after:hover
+			background: #ba97ad
+
+		&.is-active
+			&:after
+				background: #ba97ad
+
+		a
+			opacity: 0
+			text-decoration: none
+			transition: all 0.5s cubic-bezier(.97,.02,.34,.81)
+			position: absolute
+			right: 5vw
+			font-size: 24px
+			font-weight: bold
+			text-transform: uppercase
+			//cursor: pointer
+			color: #9effff
+
+
+html:root
+	--main-text-color: #b3b3b3
+	--main-border-color: #999
+	--main-title-color: #b3b3b3
+	--menu-background-color: #272727
+	--main-progress-color: #fff
+
+
+
+
+
+
+.block-cover
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+
+.cta-scroll-arrow
+	position: absolute
+	top: 60%
+	left: 50%
+	-webkit-transform: translateX(-50%) translateY(-50%)
+	transform: translateX(-50%) translateY(-50%)
+	height: 2rem
+	width: 1.125rem
+	margin-top: -.5rem
+
+	@media screen and (max-width: 500px)
+		display: none
+
+.cta-mobile-arrow-l, .cta-mobile-arrow-r
+	height: 2rem
+	width: 2rem
+	position: absolute
+	top: 40px
+	z-index: 100
+
+
+.cta-mobile-arrow-l
+	transform: rotate(90deg)
+
+.cta-mobile-arrow-r
+	transform: rotate(270deg)
+	left: 80px
+
+
+.cta-circle-main, .cta-drag-arrow-left, .cta-drag-arrow-right
+	-webkit-transition: stroke .3s linear
+	transition: stroke .3s linear
+
+
+.cta-circle-inner
+	position: absolute
+	top: 0
+	left: 0
+	height: 100%
+	width: 100%
+
+
+//.circle-progress
+//	animation: dash 10s linear
+
+
+//@keyframes dash
+//	from
+//		stroke-dashoffset: 201
+//
+//	to
+//		stroke-dashoffset: 0
+
+
+
+
+
+
+h3
+	font-size: 1rem
+	color: #35a1d6
+	margin-bottom: 5vh
+
+	@media screen and (max-width: 500px)
+		margin-bottom: 1vh
+
+
+.section
+	height: 80vh
+	width: 80vw
+	background: transparent
+	//padding: 7vw
+	position: absolute
+	top: 10vh
+	left: 10vw
+	opacity: 0
+	&.is-active
+		opacity: 1
+	//&:nth-child(even)
+	//	background: #00d0a0
+
+	@media screen and (max-width: 600px)
+		width: 85vw
+		left: 5vw
+		height: 80%!important
+
+	.info-block
+		//font-family: 'Roboto Condensed', sans-serif
+		font-size: 20px
+
+	.projects
+		display: flex
+		justify-content: center
+
+		@media screen and (max-width: 600px)
+			flex-direction: column
+
+
+
+	.part-info
+		display: flex
+		justify-content: center
+
+		@media screen and (max-width: 600px)
+			flex-direction: column
+			z-index: 90
+
+		.skills-row
+			margin-right: .5rem
+			color: #9effff
+			padding: .5rem
+			border-bottom: 1px dashed grey
+			font-size: .9rem
+			//text-shadow: #9effff 1px 1px 0, red -1px -1px 0, #9effff -1px 1px 0, #fff 1px -1px 0
+
+			@media screen and (max-width: 600px)
+				text-shadow: none
+				width: 100%
+
+		span:first-child
+			width: 140px
+			display: inline-block
+			margin-right: 10px
+			@media screen and (max-width: 600px)
+				width: 18rem
+		//	position: absolute
+		//	font-size: 16px
+		//	font-weight: bold
+		//	margin-left: -80px
+
+	h2
+		margin-bottom: 10px
+		position: relative
+		padding-left: 1.5em
+		font-size: 3.5rem
+		@media screen and (max-width: 600px)
+			font-size: 1.5rem
+
+	.progress-slide
+		display: flex
+	.n-slide
+		position: absolute
+		left: 1.3rem
+		font-size: 3.5rem
+		color: #2fa1d6
+	.div-i
+		padding: 1rem 0
+		display: flex
+		justify-content: space-between
+		font-size: 1.2rem
+		width: 60%
+		margin: auto
+		line-height: 1.6
+		border-bottom: 1px dashed gray
+
+		@media screen and (max-width: 600px)
+			flex-direction: column
+			width: 100%
+
+
+.sec5 .left, .sec4 .left
+	font-family: 'Roboto Condensed', sans-serif !important
+
+
+.project-info
+	//width: 50%
+	//padding-right: 20px
+	//border-right: 1px dashed gray
+	//margin-right: 50px
+	padding: 0 10vw
+
+	&:last-child
+		border: none
+
+.project-content
+	display: flex
+	color: white
+	justify-content: center
+	@media screen and (max-width: 600px)
+		flex-direction: column
+
+.project-description
+	padding: 0.8rem
+	font-size: 1vw
+	margin: 5px
+	color: white
+	background: #11223378
+	border-radius: 8px
+	font-family: 'Roboto Condensed', sans-serif !important
+	@media screen and (max-width: 500px)
+		font-size: 3vw
+		margin: 5px 0
+		background: transparent
+
+
+
+
+
+.card
+	border-radius: 8px
+	background: #306868
+	padding: 35px 40px
+	height: 288px
+	width: 458px
+	color: white
+	z-index: 2
+	zoom: .7
+
+.card-2, .card-3
+	position: absolute
+	opacity: .8
+	z-index: 1
+	right: 35vw
+
+.card-2
+	//margin-left: 120px
+	margin-top: 10px
+
+.card-3
+	//margin-left: 110px
+	margin-top: 20px
+
+.card-block
+	display: flex
+	justify-content: center
+
+.card-header
+	text-transform: uppercase
+	margin-bottom: 10px
+
+.card-center
+	display: flex
+	width: 100%
+	position: relative
+	align-items: center
+	margin: 10px
+	justify-content: space-between
+
+.card-center-left
+	display: block
+
+.card-center-right
+	display: flex
+	position: relative
+	img
+		width: 200px
+		margin: 10px
+		border-radius: 8px
+
+
+
+.level-1
+	transform: translateZ(35px)
+
+.level-2
+	transform: translateZ(90px)
+
+.level-3
+	transform: translateZ(110px)
+
+
+
+
+
+#cursor, #aura
+	position: absolute
+	border-radius: 100%
+	transition: .5s cubic-bezier(.75,-1.27,.3,2.33) transform, .2s cubic-bezier(.75,-1.27,.3,2.33) opacity
+	user-select: none
+	pointer-events: none
+	z-index: 10000
+	color: #9effff
+
+#cursor
+	width: 8px
+	height: 8px
+	background-color: rgba(#9effff, .5)
+	transform: scale(1)
+	&.active
+		opacity: 0
+		transform: scale(0)
+
+#aura
+	width: 46px
+	height: 46px
+	border: 1px solid rgba(#9effff, .2)
+	background-color: rgba(#9effff, .027)
+	transform: translate(5px, 5px)
+	&.active
+		border: 1.2px solid rgba(#fff, .33)
+		transform: scale(1.3)
+
+#aura.hidden,
+#cursor.hidden
+	transform: scale(.001)
+
+
+.scroll-i
+	width: 7rem
+	height: 7rem
+	right: 7rem
+	bottom: 3rem
+	margin-bottom: 2vh
+	margin-right: 2vw
+	position: absolute
+	z-index: 100
+
+	span
+		position: absolute
+		letter-spacing: .1em
+		top: 60%
+		left: 50%
+		transition: color .5s linear
+		text-transform: uppercase
+		font-size: .5rem
+		transform: translateX(-50%) translateY(100%)
+		text-align: center
+
+		@media screen and (max-width: 500px)
+			display: none
+
+	@media screen and (max-width: 600px)
+		right: 0
+		bottom: 0
+		margin-bottom: 0.5rem
+		margin-right: 0
+
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span
+	background: #ff0000
+
+
+.owl-theme .owl-dots .owl-dot span
+	width: 20px
+	height: 5px
+
+
+.owl-theme .owl-nav.disabled+.owl-dots
+	position: absolute
+	top: 0
+	margin: auto
+
+
+

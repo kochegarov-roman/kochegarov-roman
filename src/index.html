@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Kochegarov Roman portfolio">
+    <meta name="author" content="Kochegarov Roman">
+    <meta name="description" content="Kochegarov Roman frontend developer working on apps and websites for startups, brands, and entrepreneurs." />
+
+    <meta itemprop="name" content="Kochegarov Roman"/>
+    <meta itemprop="description" content="Kochegarov Roman frontend developer working on apps and websites for startups, brands, and entrepreneurs."/>
+    <meta itemprop="image" content="https://kochegarov-roman.ru/assets/logo.png"/>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Kochegarov Roman" />
+    <meta property="og:description" content="Kochegarov Roman frontend developer working on apps and websites for startups, brands, and entrepreneurs." />
+    <meta property="og:url" content="kochegarov-roman.ru" />
+    <meta property="og:image" content="https://kochegarov-roman.ru/assets/logo.png" />
+    <title>Kochegarov Roman</title>
+
+    <link rel="icon" href="assets/favicon.ico" type="image/ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="start-loading"><span id="loading-progress"></span></div>
+
+<div id="cursor"></div>
+<div id="aura"></div>
+
+
+<!--<h3>Simple Webpack Setup</h3>-->
+
+<nav class="pagination menu">
+    <ul>
+        <li data-gotoslide="1" class="link is-active"><a href="#" class="link"><span>Welcome</span></a></li>
+        <li data-gotoslide="2" class="link"><a href="#" class="link"><span>Skills</span></a></li>
+        <li data-gotoslide="3" class="link"><a href="#" class="link"><span>Projects</span></a></li>
+        <li data-gotoslide="4" class="link"><a href="#" class="link"><span>Education</span></a></li>
+        <li data-gotoslide="5" class="link"><a href="#" class="link"><span>Job</span></a></li>
+    </ul>
+</nav>
+
+
+<div class="email">
+    <span style="margin-top: -6px;" >
+        <img style="position: absolute;" src="assets/mail.png" alt="">
+    </span>
+    <a style="margin-left: 40px; transition: all .5s; text-decoration: none; color: white;" href="mailto:hello.kochegarov@gmail.com">hello.kochegarov@gmail.com</a>
+</div>
+
+<ul class="menu-page">
+    <li class="menu-item" >
+        <div id="menu-projects" class="link top-menu" data-gotoslide="3">projects</div>
+    </li>
+
+    <li class="menu-item">
+        <div class="menu-divider"></div>
+        <div id="menu-about" class="link top-menu" data-gotoslide="4">about</div>
+    </li>
+</ul>
+
+<div id="sections">
+    <section class="section about is-active" id="about" data-slide="1">
+        <div class="progress-slide">
+            <svg width="72" height="72">
+                <circle class="circle-base" fill="none" opacity="0.9" stroke="var(--main-border-color)" stroke-width="1"
+                        r="32" cx="36" cy="36"></circle>
+                <circle class="circle-progress" opacity="1" fill="none" stroke="var(--main-progress-color)"
+                        stroke-width="1" r="32" cx="36" cy="36"
+                        style="stroke-dasharray: 201; stroke-dashoffset: 0"></circle>
+            </svg>
+            <div class="n-slide">1</div>
+            <h2 class="supertitle level-2" data-stagger>Welcome <br> I'm Roman Kochegarov</h2>
+        </div>
+
+        <p class="info-block" data-stagger>This site was made as a portfolio. <br>
+            Here you can learn about the technologies I have studied, work experience and just get stuck
+        </p>
+
+    </section>
+
+    <section class="section" data-slide="2">
+        <div class="progress-slide">
+            <svg width="72" height="72">
+                <circle class="circle-base" fill="none" opacity="0.9" stroke="var(--main-border-color)" stroke-width="1"
+                        r="32" cx="36" cy="36"></circle>
+                <circle class="circle-progress" opacity="1" fill="none" stroke="var(--main-progress-color)"
+                        stroke-width="1" r="32" cx="36" cy="36"
+                        style="stroke-dasharray: 201; stroke-dashoffset: 0"></circle>
+            </svg>
+            <div class="n-slide" style="left: 1rem;font-size: 3.1rem;">2</div>
+            <h2 class="supertitle" data-stagger>Technology experience</h2>
+        </div>
+
+        <div class="part-info skills">
+            <div data-stagger>
+                <h3>Frontend:</h3>
+                <div class="skills-row" ><span>01.2020</span><span>React / 01.2021 Angular</span></div>
+                <div class="skills-row" ><span>01.2020</span><span>Redux / Redux Thunk, Reselect</span>
+                </div>
+                <div class="skills-row" ><span>06.2020</span><span>TypeScript, JavaScript (ES6+)</span>
+                </div>
+                <div class="skills-row" ><span>01.2020</span><span>Recompose</span></div>
+                <div class="skills-row" ><span>2018</span><span>SCSS / SASS / CSS3</span></div>
+                <div class="skills-row" ><span>2017</span><span>Bootstrap / 2020 Ant Design</span></div>
+                <div class="skills-row" ><span>2020</span><span>Webpack</span></div>
+                <div class="skills-row" ><span>06.2020</span>Jest<span></span></div>
+            </div>
+            <div data-stagger>
+                <h3>Backend:</h3>
+                <div class="skills-row" ><span>2015</span><span>Django</span></div>
+                <div class="skills-row" ><span>2020</span><span>Nest</span></div>
+                <div class="skills-row" ><span>2017</span><span>PostgreSql / MongoDB / SqlLite</span></div>
+                <div class="skills-row" ><span>2018</span><span>WebSocket / Socket.io</span></div>
+                <div class="skills-row" ><span>2018</span><span>Redis</span></div>
+                <div class="skills-row" ><span>2020</span><span>Celery</span></div>
+                <div class="skills-row" ><span>2018</span><span>Docker / Docker-compose</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" data-slide="3" id="app-scroll">
+        <div class="progress-slide">
+            <svg width="72" height="72">
+                <circle class="circle-base" fill="none" opacity="0.9" stroke="var(--main-border-color)" stroke-width="1"
+                        r="32" cx="36" cy="36"></circle>
+                <circle class="circle-progress" opacity="1" fill="none" stroke="var(--main-progress-color)"
+                        stroke-width="1" r="32" cx="36" cy="36"
+                        style="stroke-dasharray: 400; stroke-dashoffset: 0"></circle>
+            </svg>
+            <div class="n-slide" style="left: 1rem;font-size: 3.1rem;">3</div>
+            <h2 class="supertitle" data-stagger>Projects</h2>
+        </div>
+
+        <!--        <div class="projects">-->
+        <!--            <div class="project-info">-->
+        <!--                <h3>FullStack KrisFlorist.ru <br>2020-06.2020</h3>-->
+        <!--                <div class="project-content" data-stagger>-->
+        <!--                    <div>-->
+        <!--                        <h3>Стек технологий:</h3>-->
+        <!--                        <div>React</div>-->
+        <!--                        <div>TypeScript</div>-->
+        <!--                        <div>Django</div>-->
+        <!--                        <div>PostgreSql</div>-->
+        <!--                        <div>Docker</div>-->
+        <!--                    </div>-->
+        <!--                    <div>-->
+        <!--                        <div class="project-description">Фронтенд-разработка исключительно на React/TypeScript. Бэкенд на Django.-->
+        <!--                            Разработка сайта с нуля, затем рефакторинг, переписывание существующего кода в соответствии-->
+        <!--                            с современными тенденциями в React. Деплой проекта с использованием Docker.-->
+        <!--                            Работа осуществлялась на удаленке и в качестве подработки к основной работе.-->
+        <!--                        </div>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+
+        <!--            <div class="project-info">-->
+        <!--                <h3>FullStack AutoRem.ru <br>06.2020</h3>-->
+        <!--                <div class="project-content" data-stagger>-->
+        <!--                    <div>-->
+        <!--                        <h3>Стек технологий:</h3>-->
+        <!--                        <div>Angular</div>-->
+        <!--                        <div>Nest.js</div>-->
+        <!--                        <div>Mongo.DB</div>-->
+        <!--                        <div>TypeScript</div>-->
+        <!--                        <div>Webpack</div>-->
+        <!--                        <div>Docker</div>-->
+        <!--                    </div>-->
+        <!--                    <div>-->
+        <!--                        <div class="project-description">Фронтенд-разработка исключительно на Angular. Бэкенд на Nest.js с Mongo.DB.-->
+        <!--                            Разработка сайта с нуля. Деплой проекта с использованием Docker.-->
+        <!--                            Работа осуществлялась на удаленке и в качестве подработки к основной работе.-->
+        <!--                        </div>-->
+        <!--                        &lt;!&ndash;                <p data-stagger><img src="img/korgi.jpg" alt=""></p>&ndash;&gt;-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+
+        <!--            <div class="project-info">-->
+        <!--                <h3>FullStack - WorkStrategy.ru<br>06.2018 </h3>-->
+        <!--                <div class="project-content" data-stagger>-->
+        <!--                    <div>-->
+        <!--                        <h3>Стек технологий:</h3>-->
+        <!--                        <div>Angular</div>-->
+        <!--                        <div>Nest.js</div>-->
+        <!--                        <div>Mongo.DB</div>-->
+        <!--                        <div>TypeScript</div>-->
+        <!--                        <div>Webpack</div>-->
+        <!--                        <div>Docker</div>-->
+        <!--                    </div>-->
+        <!--                    <div>-->
+        <!--                        <div  class="project-description">Разработка сайта с нуля. Деплой проекта с использованием Docker.-->
+        <!--                            Работа осуществлялась на удаленке и в качестве подработки к основной работе.-->
+        <!--                        </div>-->
+        <!--                        &lt;!&ndash;                <p data-stagger><img src="img/korgi.jpg" alt=""></p>&ndash;&gt;-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--        </div>-->
+    </section>
+
+    <section class="section sec4" data-slide="4">
+        <div class="progress-slide">
+            <svg width="72" height="72">
+                <circle class="circle-base" fill="none" opacity="0.9" stroke="var(--main-border-color)" stroke-width="1"
+                        r="32" cx="36" cy="36"></circle>
+                <circle class="circle-progress" opacity="1" fill="none" stroke="var(--main-progress-color)"
+                        stroke-width="1" r="32" cx="36" cy="36"
+                        style="stroke-dasharray: 201; stroke-dashoffset: 0"></circle>
+            </svg>
+            <div class="n-slide" style="left: 0.7rem;font-size: 3.1rem;">4</div>
+            <h2 class="supertitle" data-stagger>Education</h2>
+        </div>
+
+        <div class="div-i" data-stagger>
+            <div class="left">ОмГУ им. Достоевского, г.Омск</div>
+            <div class="date">2013-2017</div>
+        </div>
+        <div class="div-i" data-stagger>
+            <div class="left">СибГути г. Новосибирск</div>
+            <div class="date">2017</div>
+        </div>
+<!--        <div class="div-i" data-stagger><img src="https://www.codewars.com/users/roman_kochegarov/badges/small" alt="">CodeWars</div>-->
+        <div class="div-i" data-stagger>
+            <div class="left">Habr, CodeWars, Книги</div>
+        </div>
+    </section>
+
+    <section class="section sec5" data-slide="5">
+        <div class="progress-slide">
+            <svg width="72" height="72">
+                <circle class="circle-base" fill="none" opacity="0.9" stroke="var(--main-border-color)" stroke-width="1"
+                        r="32" cx="36" cy="36"></circle>
+                <circle class="circle-progress" opacity="1" fill="none" stroke="var(--main-progress-color)"
+                        stroke-width="1" r="32" cx="36" cy="36"
+                        style="stroke-dasharray: 201; stroke-dashoffset: 0"></circle>
+            </svg>
+            <div class="n-slide" style="left: 0.9rem;font-size: 3.1rem;">5</div>
+            <h2 class="supertitle" data-stagger>Jobs</h2>
+        </div>
+        <div class="div-i" data-stagger>
+            <div class="left">ЦФТ г. Новосибирск Тестировщик</div>
+            <div class="date">02.2018-06.2018</div>
+        </div>
+        <div class="div-i" data-stagger>
+            <div class="left">МБОУ Новосельская СОШ Учитель информатики</div>
+            <div class="date">01.2019-08.2020</div>
+        </div>
+        <div class="div-i" data-stagger>
+            <div class="left">МБОУ "Лицей 22 "Надежда Сибири" Учитель информатики</div>
+            <div class="date">10.2020 -</div>
+        </div>
+    </section>
+</div>
+
+<div id="container-brain">
+</div>
+
+<div id="container-scroll">
+    <ul class="nav">
+        <li data-nav="0" class="nav-title link">workstrategy</li>
+        <li data-nav="1" class="nav-title link">how edu</li>
+        <li data-nav="2" class="nav-title link">krisflorist.ru</li>
+        <li data-nav="3" class="nav-title link">how edu</li>
+        <li data-nav="4" class="nav-title link">autorem</li>
+    </ul>
+
+    <div id="wrap" data-slide="3">
+        <div class="mobile" data-stagger>
+            <div class="n">
+                <div class="project-info">
+                    <h3>FullStack - WorkStrategy.ru<br>06.2018</h3>
+                    <div class="project-content" data-stagger>
+                        <div>
+                            <h4>Technology stack:</h4>
+                            <div>Angular</div>
+                            <div>Nest.js</div>
+                            <div>Mongo.DB</div>
+                            <div>TypeScript</div>
+                            <div>Webpack</div>
+                            <div>Docker</div>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/1.jpg" alt="">
+            </div>
+            <div class="n n1">
+                <div class="project-info">
+                    <h3>FullStack - WorkStrategy.ru</h3>
+                    <div class="project-content" data-stagger>
+                        <div class="project-description" style="max-width: 300px">
+                            Вначале весь проект(backend & frontend) был построен на Django.
+                            Затем с целью изучения React/Redux и других технологий Frontend-часть была переписана на React.
+                            Сайт был создан с нуля. Развертывание проекта с помощью Docker.
+                            Работа велась в свободное от основной работы время.
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/2.jpg" alt="">
+            </div>
+            <div class="n n2">
+                <div class="project-info">
+                    <h3>FullStack KrisFlorist.ru <br>2020-06.2020</h3>
+                    <div class="project-content lg" data-stagger>
+                        <div>
+                            <h4>Technology stack:</h4>
+                            <div>React</div>
+                            <div>TypeScript</div>
+                            <div>Django</div>
+                            <div>PostgreSql</div>
+                            <div>Docker</div>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/3.jpg" alt="">
+            </div>
+            <div class="n n3">
+                <div class="project-info">
+                    <h3>FullStack KrisFlorist.ru</h3>
+                    <div class="project-content" data-stagger>
+                        <div class="project-description" style="max-width: 300px">
+                            Front-end разработка на React / TypeScript. Backend Django.
+                            Разработка сайта велась с нуля, затем рефакторинг, переписывание существующего кода на
+                            соответствие с текущими тенденциями в React. Развернут проект с помощью Docker.
+                            Работа выполнялась удаленно и в свободное от основной работы время.
+                            Проект по заказу, но без ТЗ, вся логика продумана и реализована мной.
+                            Проект весь был построен на Django, затем переписан на React с TypeScript.
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/4.jpg" alt="">
+            </div>
+            <div class="n n4">
+                <div class="project-info">
+                    <h3>FullStack AutoRem <br>01.2021</h3>
+                    <div class="project-content" data-stagger>
+                        <div>
+                            <h4>Technology stack:</h4>
+                            <div>Angular</div>
+                            <div>Nest.js</div>
+                            <div>Mongo.DB</div>
+                            <div>TypeScript</div>
+                            <div>Webpack</div>
+                            <div>Docker</div>
+                        </div>
+                        <div>
+                            <div class="project-description">
+                                Front-end разработка с помощью Angular. Backend реализован с помощью
+                                Nest.js с Mongo.DB. Сайт создан с нуля. Развернут проект с помощью Docker.
+                                Работа выполнялась удаленно и в свободное от основной работы время.
+                                Проект на стадии доработки.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/5.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="block"></div>
+</div>
+
+<div class="scroll-i">
+    <span class=""
+          style="transform: translateX(-50%) translateY(100%); opacity: 1;">Scroll</span>
+
+    <div class="cta-mobile-arrow-l" >
+        <svg viewBox="0 0 20.06 30.04" data-nextslide="false">
+            <polyline class=" " points="0.36 0.37 10.04 9.12 19.72 0.37" fill="none"
+                      stroke="var(--main-border-color)" stroke-miterlimit="10" opacity="0.5"
+                      style="opacity: 1;"></polyline>
+        </svg>
+    </div>
+
+    <div class="cta-scroll-arrow" style="opacity: 1;">
+        <svg viewBox="0 0 20.06 30.04">
+            <polyline class="cta-scroll-arrow-part" points="0.36 0.37 10.04 9.12 19.72 0.37" fill="none"
+                      stroke="var(--main-border-color)" stroke-miterlimit="10" opacity="0.5"
+                      style="opacity: 1;"></polyline>
+            <polyline class="cta-scroll-arrow-part" points="0.36 10.65 5.2 15.03 10.04 19.4 14.88 15.03 19.72 10.65"
+                      fill="none" stroke="var(--main-border-color)" stroke-miterlimit="10" opacity="0.5"
+                      style="opacity: 0.5;"></polyline>
+            <polyline class="cta-scroll-arrow-part" points="0.33 20.74 10.08 29.37 19.69 20.49" fill="none"
+                      stroke="var(--main-border-color)" stroke-miterlimit="10" style="opacity: 0.5;"></polyline>
+        </svg>
+    </div>
+
+    <div class="cta-mobile-arrow-r" >
+        <svg viewBox="0 0 20.06 30.04" data-nextslide="true">
+            <polyline class=" " points="0.36 0.37 10.04 9.12 19.72 0.37" fill="none"
+                      stroke="var(--main-border-color)" stroke-miterlimit="10" opacity="0.5"
+                      style="opacity: 1;"></polyline>
+        </svg>
+    </div>
+
+
+    <div class="cta-circle-inner" style="transform: rotate(360deg);">
+        <svg viewBox="0 0 112 112">
+            <circle class="cta-circle-main" opacity="1" fill="none" stroke="var(--main-border-color)" stroke-width="1"
+                    stroke-dasharray="135 200" r="54" cx="56" cy="56" style="stroke-dasharray: 135, 20;"></circle>
+        </svg>
+    </div>
+</div>
+
+</body>
+</html>
